@@ -46,6 +46,7 @@
             this.uc_Student1 = new Library_Management.Uc_Student();
             this.label5 = new System.Windows.Forms.Label();
             this.uc_issue_books1 = new Library_Management.Uc_issue_books();
+            this.uc_Return_books1 = new Library_Management.Uc_Return_books();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -179,6 +180,7 @@
             this.button3.Text = " Returned Books";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -275,11 +277,19 @@
             this.uc_issue_books1.Size = new System.Drawing.Size(833, 516);
             this.uc_issue_books1.TabIndex = 13;
             // 
+            // uc_Return_books1
+            // 
+            this.uc_Return_books1.Location = new System.Drawing.Point(187, 84);
+            this.uc_Return_books1.Name = "uc_Return_books1";
+            this.uc_Return_books1.Size = new System.Drawing.Size(833, 516);
+            this.uc_Return_books1.TabIndex = 14;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1005, 598);
+            this.Controls.Add(this.uc_Return_books1);
             this.Controls.Add(this.uc_issue_books1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.uc_books_details1);
@@ -322,5 +332,6 @@
         private Uc_books_details uc_books_details1;
         private System.Windows.Forms.Label label5;
         private Uc_issue_books uc_issue_books1;
+        private Uc_Return_books uc_Return_books1;
     }
 }
